@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>phone blocks</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", BatmanForeverAlternate}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('phone copy.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 9px 9px px 33px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right:50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 10px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">ABOUT US</a><BR>
+  <a href="#">BOOK NOW</a><BR>
+  <a href="#">GALLERY</a><BR>
+  <a href="#">CONTACT US</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+<!---MAIN---!>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+  </div>
+  <div class="w3-display-middle">
+<center><img src="IMG_2310 copy.png" height="10%" width="20%"></center>
+   <center> <b><h1 class="w3-jumbo w3-animate-top"><font color="white">COMING SOON</h1><b></center>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center"><img src="time_zpsrfsqo75q.gif"></p>
+  </div>
+<FOOTER>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="http://www.facebook.com/rocky.arya.7161" target="_blank"><font face=" BatmanForeverAlternate" color="white">Rakshit Arya</a>
+  </div>
+</FOOTER>
+
+</body>
+</html>
